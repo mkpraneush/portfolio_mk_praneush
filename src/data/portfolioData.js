@@ -29,8 +29,8 @@ export const aboutInfo = {
 export const aboutPhotos = [
   {
     id: "about-photo-1",
-    fileKey: "photo-1.jpg",
-    src: "/images/about/photo-1.jpg",
+    fileKey: "photo-1.jpeg",
+    src: "/images/about/photo-1.jpeg",
     title: "Praneush M K",
     tag: "Lead Profile",
     subtitle: "Data Analyst & IT Undergrad",
@@ -38,8 +38,8 @@ export const aboutPhotos = [
   },
   {
     id: "about-photo-2",
-    fileKey: "photo-2.jpg",
-    src: "/images/about/photo-2.jpg",
+    fileKey: "campus  life with friends.jpeg",
+    src: "/images/about/campus  life with friends.jpeg",
     title: "Campus Life with Friends",
     tag: "Friends & Campus",
     subtitle: "Velalar College of Engg & Tech",
@@ -47,17 +47,17 @@ export const aboutPhotos = [
   },
   {
     id: "about-photo-3",
-    fileKey: "photo-3.jpg",
-    src: "/images/about/photo-3.jpg",
+    fileKey: "Screenshot 2026-09-18 062450.png",
+    src: "/images/about/Screenshot 2026-09-18 062450.png",
     title: "Hackathon & Team Projects",
     tag: "Project Team",
     subtitle: "Collaborative Analytics & Coding",
-    description: "Brainstorming and building data pipelines and tech solutions together as a team."
+    description: "Brainstorming and building data pipelines, geo-verification apps, and tech solutions together as a team."
   },
   {
     id: "about-photo-4",
-    fileKey: "photo-4.jpg",
-    src: "/images/about/photo-4.jpg",
+    fileKey: "club.jpeg",
+    src: "/images/about/club.jpeg",
     title: "Elevator Club — Executive Member",
     tag: "Elevator Club",
     subtitle: "Inauguration & Executive Committee",
