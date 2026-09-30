@@ -8,14 +8,45 @@ export default function ContactFooter() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
-      setSubmitted(true);
-      setTimeout(() => {
-        setFormData({ name: '', email: '', message: '' });
-        setSubmitted(false);
-      }, 5000);
+      setIsSubmitting(true);
+      
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            // REPLACE THIS KEY WITH YOUR OWN FROM WEB3FORMS
+            access_key: "04c15083-10ba-4227-99d2-a37f38be763b", 
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          }),
+        });
+
+        const result = await response.json();
+        
+        if (result.success) {
+          setSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+          setTimeout(() => {
+            setSubmitted(false);
+          }, 5000);
+        } else {
+          alert("Something went wrong! Please try again.");
+        }
+      } catch (error) {
+        alert("Something went wrong! Please try again.");
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -208,9 +239,18 @@ export default function ContactFooter() {
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-md shadow-cyan-600/20"
+                    disabled={isSubmitting}
+                    className="w-full py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 disabled:bg-cyan-800 disabled:cursor-not-allowed text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-md shadow-cyan-600/20"
                   >
-                    <Send className="w-4 h-4" /> Send Message
+                    {isSubmitting ? (
+                      <span className="flex items-center gap-2">
+                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" /> Sending...
+                      </span>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" /> Send Message
+                      </>
+                    )}
                   </button>
                 </form>
               )}

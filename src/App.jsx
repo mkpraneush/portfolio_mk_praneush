@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Achievements from './components/Achievements';
 import Internship from './components/Internship';
 import Certifications from './components/Certifications';
 import IndustrialExposure from './components/IndustrialExposure';
@@ -61,6 +62,9 @@ export default function App() {
 
         {/* 4. Projects Section (Highest visual priority) */}
         <Projects onOpenModal={handleOpenModal} />
+
+        {/* Achievements Section */}
+        <Achievements />
 
         {/* 5. Internship Section */}
         <Internship onOpenModal={handleOpenModal} />

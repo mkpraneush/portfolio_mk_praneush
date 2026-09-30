@@ -373,58 +373,88 @@ export const internshipData = {
 export const certificationsData = [
   {
     id: "cert-1",
-    title: "Microsoft Certified: Power BI Data Analyst Associate",
-    issuer: "Microsoft / Coursera",
-    year: "2025",
-    skillsLearned: ["DAX Querying", "Data Modeling", "Power Query ETL", "Dashboard Publishing"],
-    credentialUrl: "#"
+    title: "IBM Python for Data Science",
+    issuer: "IBM / Credly",
+    year: "2023",
+    skillsLearned: ["Python Programming", "Pandas", "Data Science"],
+    credentialUrl: "b8c05020-d286-4767-a64e-2a334a686df7"
   },
   {
     id: "cert-2",
-    title: "Advanced SQL for Data Analytics",
-    issuer: "HackerRank & Coursera",
-    year: "2024",
-    skillsLearned: ["Complex Joins", "Window Functions", "CTEs", "Query Performance Indexing"],
-    credentialUrl: "#"
+    title: "MongoDB Basics for Students",
+    issuer: "MongoDB",
+    year: "2023",
+    skillsLearned: ["Database Fundamentals", "MongoDB", "Data Modeling"],
+    credentialUrl: "cb11add5-ff01-4781-8bda-bc0026f94735"
   },
   {
     id: "cert-3",
-    title: "Python Data Science & Analysis",
-    issuer: "IBM / DataCamp",
-    year: "2024",
-    skillsLearned: ["Pandas & NumPy", "Data Wrangling", "Matplotlib & Seaborn", "Statistical Analysis"],
-    credentialUrl: "#"
+    title: "Java Training",
+    issuer: "Spoken Tutorial, IIT Bombay",
+    year: "2023",
+    skillsLearned: ["Java", "87.50% Score"],
+    credentialUrl: "3012648RZD"
   },
   {
     id: "cert-4",
-    title: "UI/UX Foundations & Accessibility-First Design",
-    issuer: "Google / UX Design Institute",
+    title: "Prompt Engineering for Everyone",
+    issuer: "IBM Skills Network",
+    year: "2023",
+    skillsLearned: ["Prompt Engineering", "Generative AI"],
+    credentialUrl: "AI0117EN"
+  },
+  {
+    id: "cert-5",
+    title: "IDEAFEST ’25 – Project Presentation",
+    issuer: "Velalar College of Engineering and Technology",
     year: "2025",
-    skillsLearned: ["Visual Hierarchy", "WCAG 2.1 Guidelines", "Figma Wireframing", "Usability Testing"],
+    skillsLearned: ["Innovation", "Problem-Solving", "Presentation"],
     credentialUrl: "#"
+  },
+  {
+    id: "cert-6",
+    title: "Power BI Course & Project Development",
+    issuer: "Skill Development Learning Centre (SDLC)",
+    year: "2025",
+    skillsLearned: ["Power BI", "Data Visualization", "Dashboard Development"],
+    credentialUrl: "SDLC2025102"
   }
 ];
 
 export const industrialExposureData = [
   {
     id: "exp-1",
-    company: "Infosys IT Park",
+    company: "Pettabit Technologies LLP, Kollam, Kerala",
     type: "Industrial Visit",
-    date: "October 2024",
-    learning: "Gained insight into enterprise cloud data lakes, ETL pipeline automation, and large-scale data engineering workflows."
+    date: "19 October 2024",
+    learning: "Gained exposure to industry practices, technology workflows, and the professional IT environment.",
+    photo: "/industrial_visit/Screenshot 2026-09-18 054204.png"
   },
   {
     id: "exp-2",
-    company: "DataTech Summit",
-    type: "Hands-on Workshop",
-    date: "February 2025",
-    learning: "Participated in advanced DAX optimization strategies and real-time streaming telemetry visualizations."
+    company: "SKM Egg Products Export (India) Ltd.",
+    type: "Industrial Visit",
+    date: "5–6 February 2025",
+    learning: "Participated to understand real-world manufacturing operations, production processes, quality practices, and technology.",
+    photo: "/industrial_visit/Screenshot 2026-09-18 130306.png"
+  }
+];
+
+export const achievementsData = [
+  {
+    id: "ach-1",
+    title: "Research Paper Presentation",
+    event: "GITCON 2025, KLS GIT, Belagavi",
+    description: "Presented a research paper titled “Intelligent Threat Detection in HS-RAN: A Machine Learning Approach to Secure the Future Wireless Network.”",
+    year: "2025",
+    icon: "Target"
   },
   {
-    id: "exp-3",
-    company: "VCET Tech Symposium",
-    type: "Seminar & Poster Presentation",
-    date: "March 2025",
-    learning: "Presented research paper on Accessibility-First UI/UX principles in modern web dashboard design."
+    id: "ach-2",
+    title: "Internal Hackathon 2025 (SIH)",
+    event: "Institution’s Innovation Council, VCET",
+    description: "Participated as a member of Team HYDROTRACKERS, contributing to the development of an innovative solution.",
+    year: "2025",
+    icon: "Trophy"
   }
 ];

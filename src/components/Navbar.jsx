@@ -11,6 +11,7 @@ export default function Navbar({ theme, toggleTheme }) {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Internship', href: '#internship' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Exposure', href: '#exposure' },
@@ -26,7 +27,7 @@ export default function Navbar({ theme, toggleTheme }) {
       }
 
       // Active section calculation
-      const sections = ['hero', 'about', 'skills', 'projects', 'internship', 'certifications', 'exposure', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'achievements', 'internship', 'certifications', 'exposure', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {

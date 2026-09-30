@@ -33,6 +33,11 @@ export default function IndustrialExposure() {
               <TiltCard maxTilt={5} className="h-full rounded-xl">
                 <div className="glass-panel glass-panel-hover rounded-xl p-5 border-slate-800 hover:border-cyan-500/40 flex flex-col justify-between h-full bg-slate-900/80">
                   <div>
+                    {item.photo && (
+                      <div className="w-full h-32 rounded-lg overflow-hidden mb-3">
+                        <img src={item.photo} alt={item.company} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    )}
                     <div className="flex items-center justify-between text-xs mb-2.5">
                       <span className="font-semibold text-cyan-400 font-mono px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-500/20">
                         {item.type}
